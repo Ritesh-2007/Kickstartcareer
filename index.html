@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KickstartCareer - Your Career Partner</title>
+    <title>KickstartCareer - Login & Sections</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,9 +13,12 @@
             <h1>KickstartCareer</h1>
             <nav>
                 <ul>
+                    <li><a href="#student-login">Student Login</a></li>
+                    <li><a href="#college-login">College Login</a></li>
+                    <li><a href="#company-login">Company Login</a></li>
                     <li><a href="#jobs">Jobs</a></li>
                     <li><a href="#internships">Internships</a></li>
-                    <li><a href="#mentorship">Mentorship</a></li>
+                    <li><a href="#mentorships">Mentorships</a></li>
                     <li><a href="#schemes">Government Schemes</a></li>
                     <li><a href="#research">Research & Innovation</a></li>
                 </ul>
@@ -23,56 +26,82 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <h2>Your One-Stop Solution for Career Growth</h2>
-            <p>Find jobs, internships, mentorships, and more with AI-powered skill matching!</p>
-            <div class="cta-buttons">
-                <a href="login-student.html" class="btn">Student Login</a>
-                <a href="login-college.html" class="btn">College Login</a>
-                <a href="login-company.html" class="btn">Company Login</a>
-            </div>
-        </div>
+    <!-- Student Login -->
+    <section id="student-login" class="content-section">
+        <h3>Student Login</h3>
+        <form action="/student-dashboard" method="POST">
+            <label for="student-email">Email:</label>
+            <input type="email" id="student-email" name="email" required>
+
+            <label for="student-password">Password:</label>
+            <input type="password" id="student-password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
     </section>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Jobs Section -->
-        <section id="jobs" class="content-section">
-            <h3>Jobs</h3>
-            <p>Explore AI-recommended jobs tailored for your skills.</p>
-            <a href="jobs.html" class="btn">View Jobs</a>
-        </section>
+    <!-- College Login -->
+    <section id="college-login" class="content-section">
+        <h3>College Login</h3>
+        <form action="/college-dashboard" method="POST">
+            <label for="college-email">Email:</label>
+            <input type="email" id="college-email" name="email" required>
 
-        <!-- Internships Section -->
-        <section id="internships" class="content-section">
-            <h3>Internships</h3>
-            <p>Discover internships that align with your career goals.</p>
-            <a href="internships.html" class="btn">Find Internships</a>
-        </section>
+            <label for="college-password">Password:</label>
+            <input type="password" id="college-password" name="password" required>
 
-        <!-- Mentorship Section -->
-        <section id="mentorship" class="content-section">
-            <h3>Mentorship</h3>
-            <p>Connect with experienced mentors for personalized guidance.</p>
-            <a href="mentorship.html" class="btn">Explore Mentorships</a>
-        </section>
+            <button type="submit">Login</button>
+        </form>
+    </section>
 
-        <!-- Government Schemes Section -->
-        <section id="schemes" class="content-section">
-            <h3>Government Schemes</h3>
-            <p>Stay informed about the latest government initiatives.</p>
-            <a href="schemes.html" class="btn">View Schemes</a>
-        </section>
+    <!-- Company Login -->
+    <section id="company-login" class="content-section">
+        <h3>Company Login</h3>
+        <form action="/company-dashboard" method="POST">
+            <label for="company-email">Email:</label>
+            <input type="email" id="company-email" name="email" required>
 
-        <!-- Research & Innovation Section -->
-        <section id="research" class="content-section">
-            <h3>Research & Innovation</h3>
-            <p>Engage in cutting-edge projects and collaborations.</p>
-            <a href="research.html" class="btn">Learn More</a>
-        </section>
-    </main>
+            <label for="company-password">Password:</label>
+            <input type="password" id="company-password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Jobs -->
+    <section id="jobs" class="content-section">
+        <h3>Jobs</h3>
+        <p>Explore available job opportunities tailored to your skills.</p>
+        <a href="jobs.html" class="btn">View Jobs</a>
+    </section>
+
+    <!-- Internships -->
+    <section id="internships" class="content-section">
+        <h3>Internships</h3>
+        <p>Find internships that align with your career goals.</p>
+        <a href="internships.html" class="btn">Find Internships</a>
+    </section>
+
+    <!-- Mentorships -->
+    <section id="mentorships" class="content-section">
+        <h3>Mentorships</h3>
+        <p>Connect with experienced mentors for personalized guidance.</p>
+        <a href="mentorships.html" class="btn">Explore Mentorships</a>
+    </section>
+
+    <!-- Government Schemes -->
+    <section id="schemes" class="content-section">
+        <h3>Government Schemes</h3>
+        <p>Access the latest government initiatives and schemes.</p>
+        <a href="schemes.html" class="btn">View Schemes</a>
+    </section>
+
+    <!-- Research & Innovation -->
+    <section id="research" class="content-section">
+        <h3>Research & Innovation</h3>
+        <p>Engage in cutting-edge projects and collaborations.</p>
+        <a href="research.html" class="btn">Learn More</a>
+    </section>
 
     <!-- Footer -->
     <footer>
